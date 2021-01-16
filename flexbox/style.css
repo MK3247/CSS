@@ -1,0 +1,28 @@
+.container {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    background-color:moccasin;
+    /* height: 600px; */
+    /* opacity: 0.5; */
+
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.flex-container-left {
+    flex: 70%;
+}
+
+.flex-container-right {
+    flex: 30%;
+}
+
+@media (max-width: 800px) {
+    .flex-container-left, .flex-container-right {
+        flex: 100%
+    }
+}
