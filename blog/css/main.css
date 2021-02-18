@@ -1,0 +1,32 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+}
+
+.main {
+    flex: 70%;
+}
+
+.sidebar {
+    flex: 30%;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .main, .sidebar {
+        flex: 100%
+    }
+}
